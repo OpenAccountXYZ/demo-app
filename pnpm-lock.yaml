@@ -54,8 +54,8 @@ dependencies:
     specifier: 14.2.4
     version: 14.2.4(react-dom@18.3.1)(react@18.3.1)
   openaccount-connect:
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.0.1
+    version: 1.0.1
   react:
     specifier: ^18
     version: 18.3.1
@@ -64,6 +64,9 @@ dependencies:
     version: 18.3.1(react@18.3.1)
 
 devDependencies:
+  '@types/chance':
+    specifier: ^1.1.6
+    version: 1.1.6
   '@types/node':
     specifier: ^20
     version: 20.14.6
@@ -3084,6 +3087,10 @@ packages:
       tslib: 2.6.3
     dev: false
 
+  /@types/chance@1.1.6:
+    resolution: {integrity: sha512-V+pm3stv1Mvz8fSKJJod6CglNGVqEQ6OyuqitoDkWywEODM/eJd1eSuIp9xt6DrX8BWZ2eDSIzbw1tPCUTvGbQ==}
+    dev: true
+
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
@@ -5110,8 +5117,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /openaccount-connect@1.0.0:
-    resolution: {integrity: sha512-whNMBDOCAL4YjL60i/6RFT95t+1QvFaoniBj0jI7QSPPolr7/IqtQ43hVNSdCimudOSHsBae2lh7YrW05FGKzA==}
+  /openaccount-connect@1.0.1:
+    resolution: {integrity: sha512-GuNdUYPfnjAzcrrfVKYlQB2qFAoBW7KoDY5jLTKGBZXgGgMI8f/W1dWXVdkKD4spFUfNaM3xQTtvwMNhkQR99g==}
     dependencies:
       '@passwordless-id/webauthn': 1.6.1
       '@peculiar/asn1-ecc': 2.3.8
