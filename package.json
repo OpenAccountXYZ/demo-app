@@ -1,0 +1,42 @@
+{
+  "name": "opc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@nextui-org/button": "^2.0.34",
+    "@nextui-org/react": "^2.4.2",
+    "@nextui-org/system": "^2.2.2",
+    "@nextui-org/theme": "^2.2.6",
+    "@passwordless-id/webauthn": "^1.6.1",
+    "@peculiar/asn1-ecc": "^2.3.8",
+    "@peculiar/asn1-schema": "^2.3.8",
+    "@soulwallet/sdk": "^0.3.6",
+    "axios": "^1.7.2",
+    "chance": "^1.1.11",
+    "ethers": "^6.13.1",
+    "faker": "^6.6.6",
+    "framer-motion": "^11.2.11",
+    "next": "14.2.4",
+    "openaccount-connect": "^1.0.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
