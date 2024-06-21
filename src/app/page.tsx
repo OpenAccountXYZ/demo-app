@@ -8,8 +8,8 @@ export default function Home() {
   const { authResult, openAuthWindow } = openaccount.useAuthWindow();
 
   const handleButtonClick = () => {
-    // openAuthWindow('https://account.test.oa.xyz', window.location.origin, "1234567890");
-    openAuthWindow('http://localhost:3001/', window.location.origin, "1234567890");
+    openAuthWindow('https://account.test.oa.xyz', window.location.origin, "1234567890");
+    // openAuthWindow('http://localhost:3001/', window.location.origin, "1234567890");
 
     // openAuthWindow("/");
     // openAuthWindow('/?callback_origin=' + 'https://www.google.com');
