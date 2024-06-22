@@ -28,7 +28,7 @@
     "openaccount-connect": "^1.0.9",
     "react": "^18",
     "react-dom": "^18",
-    "your-package-name-test-ac": "^1.0.0"
+    "antd": "^5.18.3"
   },
   "devDependencies": {
     "@types/chance": "^1.1.6",
