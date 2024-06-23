@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { AuthButton, useAuthWindow, verifySignature } from "openaccount-connect";
 import { message } from 'antd';
-import { Textarea } from "@nextui-org/react";
+import { Link, Textarea } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 
 export default function Home() {
@@ -85,6 +85,25 @@ export default function Home() {
         >
           Verify Auth Signature With EIP1271
         </Button>
+      </div>
+
+      <div className="flex justify-center align-center mt-[20px] mb-[20px]">
+        <Link
+          isExternal
+          showAnchorIcon
+          href="https://docs.google.com/document/d/1u_rs6i2aR4j5gNJoRtQKLxmJe__1pbnqQav39ll0qnY/edit?usp=sharing"
+        >
+          What is OpenAccount?
+        </Link>
+        </div>
+      <div className="flex justify-center align-center mt-[20px] mb-[20px]">
+        <Link
+            isExternal
+            showAnchorIcon
+            href="https://github.com/OpenAccountXYZ/demo-app"
+          >
+            Visit source code on GitHub.
+          </Link>
       </div>
     </div>
   );
