@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { AuthButton, useAuthWindow, verifySignature } from "openaccount-connect";
-import { message, Spin, Input } from 'antd';
-
-const { TextArea } = Input;
+import {message} from 'antd';
+import {Textarea} from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
 
 export default function Home() {
 
@@ -13,8 +13,7 @@ export default function Home() {
 
   // get challenge from server
   // const challenge = await fetch("/api/challenge");
-
-  const challenge = "your-challenge-string"
+  const challenge = crypto.getRandomValues(new Uint8Array(32)).toString();
 
 
   // Define an internal async function
@@ -24,9 +23,9 @@ export default function Home() {
       let status = await verifySignature(authResult);
 
       if (status) {
-        message.success('Signature successful')
+        message.success('Verify signature successfully')
       } else {
-        message.error('Signature failure')
+        message.error('Verify signature failed')
       }
     } catch (error) {
       // Error handling
@@ -34,35 +33,32 @@ export default function Home() {
     }
   };
 
+  const onPress = (e: any) => {
+    verifySignatureAsync(authResult);
+  }
+
   useEffect(() => {
     if (authResult) {
-      verifySignatureAsync(authResult)
-
+      // got user signature, handle user login
+      message.success("Got user auth signature. Please veryify.")
     }
   }, [authResult]);
-
 
 
   return (
     <div className="flex justify-center align-center mt-[200px] p-[20px]" >
       <AuthButton challenge={challenge}></AuthButton>
-      {/* {authResult && <div>Auth Result: {JSON.stringify(authResult, null, 2)}</div>} */}
+      
+      <Textarea
+        isReadOnly
+        label="Auth Result"
+        variant="bordered"
+        value={authResult ? JSON.stringify(authResult, null, 2) : ""}
+        className="max-w-xs"/>
 
-
-      {/* <div className="flex justify-center items-center px-3 py-2.5 text-center rounded-lg border border-solid border-zinc-300 md:w-[579px] max-md:px-5">
-        <div className="flex gap-3">
-          <div className="flex flex-col justify-center text-3xl font-medium leading-5 text-white whitespace-nowrap">
-            <div className="justify-center items-center leading-[3.25rem] bg-black rounded-2xl h-[52px] w-[52px]">
-              OP
-            </div>
-          </div>
-          <div className="my-auto text-2xl leading-7 text-zinc-900">
-            Sign in with OpenAccount
-          </div>
-        </div>
-      </div> */}
-
-
+      <Button color="primary" isDisabled={authResult === null} onClick={onPress}>
+        Verify Auth Signature With EIP1271
+      </Button>
     </div>
   );
 }
