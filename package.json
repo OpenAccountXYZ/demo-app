@@ -25,7 +25,7 @@
     "faker": "^6.6.6",
     "framer-motion": "^11.2.11",
     "next": "14.2.4",
-    "openaccount-connect": "^1.0.10",
+    "openaccount-connect": "^1.0.11",
     "react": "^18",
     "react-dom": "^18",
     "antd": "^5.18.3"

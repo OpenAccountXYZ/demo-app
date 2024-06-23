@@ -55,6 +55,7 @@ export default function Home() {
       <p className="text-4xl font-bold text-center">OpenAccount Connect Demo App</p>
       <div className="flex justify-center align-center mt-[20px] mb-[20px]">
         <AuthButton challenge={challenge}></AuthButton>
+
       </div>
       {
         authResult && <Textarea
