@@ -40,7 +40,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if (authResult && (authResult as any).fullChallenge) {
+    if (authResult && (authResult as any).signature) {
       // got user signature, handle user login
       message.success("Got user auth signature. Please veryify.")
       let fullChallenge: any = (authResult as any).fullChallenge;
