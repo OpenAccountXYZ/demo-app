@@ -57,8 +57,8 @@ dependencies:
     specifier: 14.2.4
     version: 14.2.4(react-dom@18.3.1)(react@18.3.1)
   openaccount-connect:
-    specifier: ^1.0.25
-    version: 1.0.25(@types/react@18.3.3)(framer-motion@11.2.11)(react-dom@18.3.1)
+    specifier: 1.0.26
+    version: 1.0.26(@types/react@18.3.3)(framer-motion@11.2.11)(react-dom@18.3.1)
   react:
     specifier: ^18
     version: 18.3.1
@@ -5483,8 +5483,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /openaccount-connect@1.0.25(@types/react@18.3.3)(framer-motion@11.2.11)(react-dom@18.3.1):
-    resolution: {integrity: sha512-l9NpGab/hO7NujBabAWrzX3mk6p5KjJuZcm++i48bEJ3+snXY1zqf43Kaor7/gbDAXITe2O669yWCIGvU+FpAw==}
+  /openaccount-connect@1.0.26(@types/react@18.3.3)(framer-motion@11.2.11)(react-dom@18.3.1):
+    resolution: {integrity: sha512-yJ24jVYYWc9vBc/yqJUy929aZfZsrk5tm1X2y28foUPX/MFf2dvO64OUYBURswySTuS/lub4EFeHxi+KCf9RgA==}
     dependencies:
       '@nextui-org/react': 2.4.2(@types/react@18.3.3)(framer-motion@11.2.11)(react-dom@18.3.1)(react@18.3.1)(tailwindcss@3.4.4)
       '@passwordless-id/webauthn': 1.6.1
