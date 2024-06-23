@@ -50,9 +50,9 @@ export default function Home() {
       <AuthButton challenge={challenge}></AuthButton>
       <Textarea
         isReadOnly
-        label="Auth Result"
+        label="User Info"
         variant="bordered"
-        value={authResult ? JSON.stringify(authResult, null, 2) : ""}
+        value={authResult ? `Address: ${authResult.fullChallenge.account}\nChainID:${authResult.fullChallenge.chainID}` : ""}
         className="max-w-xs"/>
       <Textarea
         isReadOnly
