@@ -19,16 +19,16 @@
     "@peculiar/asn1-ecc": "^2.3.8",
     "@peculiar/asn1-schema": "^2.3.8",
     "@soulwallet/sdk": "^0.3.6",
+    "antd": "^5.18.3",
     "axios": "^1.7.2",
     "chance": "^1.1.11",
     "ethers": "^6.13.1",
     "faker": "^6.6.6",
     "framer-motion": "^11.2.11",
     "next": "14.2.4",
-    "openaccount-connect": "^1.0.13",
+    "openaccount-connect": "^1.0.20",
     "react": "^18",
-    "react-dom": "^18",
-    "antd": "^5.18.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/chance": "^1.1.6",
