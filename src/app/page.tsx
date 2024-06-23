@@ -51,31 +51,34 @@ export default function Home() {
 
 
   return (
-    <div className="justify-center align-center mt-[20%] p-[20px]" >
-      <p className="text-4xl font-bold text-center">OpenAccount Connect Demo App</p>
+    <div className="justify-center align-center mt-[10%] p-[20px]" >
+      <p className="text-4xl font-bold text-center mb-[10%]">OpenAccount Demo App</p>
       <div className="flex justify-center align-center mt-[20px] mb-[20px]">
         <AuthButton challenge={challenge}></AuthButton>
 
       </div>
-      {
-        authResult && <Textarea
-          isReadOnly
-          label="User Info"
-          variant="bordered"
-          value={userInfo}
-          className="max-w mb-[20px]" />
-      }
-      {
-        authResult && <Textarea
-          isReadOnly
-          label="Auth Result"
-          variant="bordered"
-          value={JSON.stringify(authResult, null, 2)}
-          className="max-w" />
-      }
 
+      {/* <div className="flex justify-center align-center mt-[20px] mb-[20px] max-w-[600px]"> */}
+        {
+          authResult && <Textarea
+            isReadOnly
+            label="User Info"
+            variant="bordered"
+            value={userInfo}
+            className="max-w mb-[20px]" />
+        }
+      {/* </div> */}
+      {/* <div className="flex justify-center align-center mt-[20px] mb-[20px] max-w-[600px]"> */}
+        {
+          authResult && <Textarea
+            isReadOnly
+            label="Auth Result"
+            variant="bordered"
+            value={JSON.stringify(authResult, null, 2)}
+            className="max-w" />
+        }
+        {/* </div> */}
       <div className="flex justify-center align-center mt-[20px] mb-[20px]">
-
         <Button color="primary"
           isDisabled={authResult === null}
           onClick={onPress}
