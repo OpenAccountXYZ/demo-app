@@ -46,20 +46,21 @@ export default function Home() {
 
 
   return (
-    <div className="flex justify-center align-center mt-[200px] p-[20px]" >
+    <div className="justify-center align-center mt-[200px] p-[20px]" >
+      <p className="text-4xl font-bold text-center">OpenAccount Connect Demo App</p>
       <AuthButton challenge={challenge}></AuthButton>
       <Textarea
         isReadOnly
         label="User Info"
         variant="bordered"
         value={authResult ? `Address: ${authResult.fullChallenge.account}\nChainID:${authResult.fullChallenge.chainID}` : ""}
-        className="max-w-xs"/>
+        className="max-w"/>
       <Textarea
         isReadOnly
         label="Auth Result"
         variant="bordered"
         value={authResult ? JSON.stringify(authResult, null, 2) : ""}
-        className="max-w-xs"/>
+        className="max-w"/>
 
       <Button color="primary" isDisabled={authResult === null} onClick={onPress}>
         Verify Auth Signature With EIP1271
