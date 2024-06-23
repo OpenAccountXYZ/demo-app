@@ -48,7 +48,12 @@ export default function Home() {
   return (
     <div className="flex justify-center align-center mt-[200px] p-[20px]" >
       <AuthButton challenge={challenge}></AuthButton>
-      
+      <Textarea
+        isReadOnly
+        label="Auth Result"
+        variant="bordered"
+        value={authResult ? JSON.stringify(authResult, null, 2) : ""}
+        className="max-w-xs"/>
       <Textarea
         isReadOnly
         label="Auth Result"
