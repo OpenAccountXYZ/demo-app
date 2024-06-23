@@ -51,8 +51,8 @@ export default function Home() {
 
 
   return (
-    <div className="justify-center align-center mt-[10%] p-[20px]" >
-      <p className="text-4xl font-bold text-center mb-[10%]">OpenAccount Demo App</p>
+    <div className="justify-center align-center mt-[100px] p-[20px]" >
+      <p className="text-4xl font-bold text-center mb-[100px]">OpenAccount Demo App</p>
       <div className="flex justify-center align-center mt-[20px] mb-[40px]">
         <AuthButton challenge={challenge}></AuthButton>
 
