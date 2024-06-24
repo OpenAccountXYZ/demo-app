@@ -4585,10 +4585,10 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-openaccount-connect@^1.0.29:
-  version "1.0.29"
-  resolved "https://registry.npmjs.org/openaccount-connect/-/openaccount-connect-1.0.29.tgz"
-  integrity sha512-KrLMblyG/3ygp7DtbyOHf/0cLTp9aTV4AALDduB0qr0bj1NfMda/SVwMzRKOOcWM6g9uvQ5gg2+mP75RL+d2YQ==
+openaccount-connect@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.npmjs.org/openaccount-connect/-/openaccount-connect-1.0.30.tgz"
+  integrity sha512-ABoUW7FxuX9I4yRCoTjE2HfjfQgeRdglQOhU2hNQrt3NOEWQ36TIZlGaZ+nldpGgpZdHuwqqI1x5EvFmcSIjDw==
   dependencies:
     "@nextui-org/react" "^2.4.2"
     "@passwordless-id/webauthn" "^1.6.1"
