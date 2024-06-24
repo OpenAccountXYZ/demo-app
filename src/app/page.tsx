@@ -30,6 +30,7 @@ export default function Home() {
         message.error('Verify signature failed')
       }
     } catch (error) {
+      message.error('Verify signature failed')
       // Error handling
       console.error('Error verifying signature:', error);
     }
@@ -51,11 +52,10 @@ export default function Home() {
 
 
   return (
-    <div className="justify-center align-center mt-[100px] p-[20px]" >
+    <div className="justify-center align-center mt-[40px] p-[20px]" >
       <p className="text-4xl font-bold text-center mb-[100px]">OpenAccount Demo App</p>
       <div className="flex justify-center align-center mt-[00px] mb-[80px]">
         <AuthButton challenge={challenge}></AuthButton>
-
       </div>
 
       {/* <div className="flex justify-center align-center mt-[20px] mb-[20px] max-w-[600px]"> */}
