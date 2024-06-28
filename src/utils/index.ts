@@ -41,12 +41,12 @@ Expire Time: ${challenge.expireTime}
 `;
 }
 
-const RPC_URL = "https://sepolia.optimism.io"
-const BUNDLER_URL = "https://api.pimlico.io/v2/optimism-sepolia/rpc?apikey=da8c37e8-9ccc-4928-ab88-615b7de5c088"
-const soulWalletFactory = "0xF78Ae187CED0Ca5Fb98100d3F0EAB7a6461d6fC6"
-const defaultCallbackHandler = "0x880c6eb80583795625935B08AA28EB37F16732C7"
-const socialRecoveryModule = "0x3Cc36538cf53A13AF5C28BB693091e23CF5BB567"
-const SoulWalletDefaultValidator =  "0x82621ac52648b738fEdd381a3678851933505762"
+const RPC_URL = "https://sepolia.base.org"
+const BUNDLER_URL = "https://api.pimlico.io/v2/base-sepolia/rpc?apikey=da8c37e8-9ccc-4928-ab88-615b7de5c088"
+const soulWalletFactory = "0x7Ac471845A645F9930Db330eae6D68814e248901"
+const defaultCallbackHandler = "0xB610e798A3C4282C8D53A3E080ae6b05308D9215"
+const socialRecoveryModule = "0x4ecb183D2433Cc603b16dDe8D441540E7760beF9"
+const SoulWalletDefaultValidator = "0xEa26efD37384870C4017FAE51147A08F90b08fd9"
 
 const soulWallet = new SoulWallet(
     RPC_URL,
