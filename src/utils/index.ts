@@ -204,11 +204,11 @@ const eip1271Abi = [
 ]
 
 async function verify1271(provider: JsonRpcProvider, signerAddress: string, hash: string, signature: string): Promise<boolean> {
-    const bytecode = await provider.getCode(signerAddress);
-    if (!bytecode || bytecode === '0x' ||
-        bytecode === '0x0' || bytecode === '0x00') {
-        return false;
-    }
+    // const bytecode = await provider.getCode(signerAddress);
+    // if (!bytecode || bytecode === '0x' ||
+    //     bytecode === '0x0' || bytecode === '0x00') {
+    //     return false;
+    // }
 
     const contract = new Contract(signerAddress, eip1271Abi, provider);
     const result = await contract.isValidSignature(hash, signature)
