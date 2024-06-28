@@ -91,7 +91,7 @@ export default function Home() {
         <Link
           isExternal
           showAnchorIcon
-          href="https://docs.google.com/document/d/1u_rs6i2aR4j5gNJoRtQKLxmJe__1pbnqQav39ll0qnY/edit?usp=sharing"
+          href="https://mirror.xyz/oaxyz.eth/kQtlGDckhN6NhS7hEpnJKKkbYrKAUHxg31R7XW_-Xko"
         >
           What is OpenAccount?
         </Link>
